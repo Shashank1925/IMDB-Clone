@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/bb3eee396b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header section start here  -->
+    <header>
+      <!-- navbar inside hearer  -->
+      <nav class="navbar">
+        <img src="logo.png" alt="IMDB logo" />
+        <!-- <h2>IMDb</h2> -->
+      </nav>
+      <form action="" class="form">
+        <div class="combine">
+          <input
+            type="text"
+            id="input"
+            placeholder="Search for a movie..."
+            autocomplete="off"
+          />
+          <div id="results"></div>
+        </div>
+        <!-- This is where search results will appear -->
+
+        <button type="submit" id="submit">IMDB Movies</button>
+      </form>
+      <div class="fav">
+        <p>My Favorite</p>
+        <i
+          id="heart"
+          class="fa-solid fa-heart fa-2xl fa-beat"
+          style="color: #ffffff"
+        ></i>
+      </div>
+    </header>
+    <!-- main section start here  -->
+    <main>
+      <div class="movies"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

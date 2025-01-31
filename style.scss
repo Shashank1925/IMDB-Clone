@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #333333;
+  display: flex;
+  .navbar {
+    // width: 10%;
+    color: white;
+    margin-left: 4rem;
+    img {
+      width: 6rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      margin-top: 0.8rem;
+    }
+  }
+  .combine {
+    display: flex;
+    flex-direction: column;
+    // height: 10rem;
+  }
+  .form {
+    display: flex;
+  }
+  #input {
+    width: 30rem;
+    height: 2rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    padding: 0 2rem;
+    outline: none;
+  }
+  button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    background-color: #0eb2f3;
+    color: black;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    transition: transform 0.5s ease-in-out;
+  }
+  button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  button:active {
+    background-color: orange;
+  }
+  .fav {
+    display: flex;
+    margin-top: 1.4rem;
+    margin-left: 12rem;
+    color: white;
+    #heart {
+      margin-top: 0.7rem;
+      margin-left: 1rem;
+    }
+  }
+}
+main {
+  width: 100%;
+  height: auto;
+  // background-color: #333333;
+
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: orange;
+    // border: 5px solid red;
+    .favorite {
+      color: red !important;
+    }
+  }
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.movie {
+  width: 20rem;
+  // height: auto;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #333333;
+  border-radius: 0.5rem;
+  img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  .movieName {
+    color: white;
+    text-align: center;
+    margin: 0.5rem 0;
+    transition: trasform 0.5s ease-in-out;
+  }
+  .movieYear {
+    color: white;
+    text-align: center;
+    margin: 0.5rem 0;
+    transition: trasform 0.5s ease-in-out;
+  }
+  img:hover {
+    transform: rotate(720deg);
+    cursor: pointer;
+  }
+  .movieYear:hover,
+  .movieName:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
