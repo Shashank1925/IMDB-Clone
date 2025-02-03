@@ -99,24 +99,24 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #333333;
+  background-color: #0f6eeb;
   border-radius: 0.5rem;
 }
 .movie img {
   border-radius: 0.5rem 0.5rem 0 0;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 .movie .movieName {
-  color: white;
+  color: black;
   text-align: center;
   margin: 0.5rem 0;
-  transition: trasform 0.5s ease-in-out;
+  transition: trasform 0.8s ease-in-out;
 }
 .movie .movieYear {
-  color: white;
+  color: orange;
   text-align: center;
   margin: 0.5rem 0;
-  transition: trasform 0.5s ease-in-out;
+  transition: trasform 0.8s ease-in-out;
 }
 .movie img:hover {
   transform: rotate(720deg);

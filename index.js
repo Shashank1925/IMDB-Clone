@@ -166,6 +166,7 @@ function addFavorite(fav, movie) {
     if (fav.classList.toggle("favorite"));
     {
       favoriteArray.push(movie);
+      saveToLocalStorage(favoriteArray);
       searchEl.value = "";
       icon.push(fav);
     }
@@ -174,8 +175,8 @@ function addFavorite(fav, movie) {
 // when click on heart icon
 heartEl.addEventListener("click", () => addTofavorites(favoriteArray, icon));
 
-function addTofavorites(data, icon) {
-  console.log(icon);
+function addTofavorites(data) {
+  // console.log(icon);
   displayMovieDetails(data);
   const allHearts = document.querySelectorAll(".fa-lg");
   allHearts.forEach((heart) => {
@@ -199,3 +200,15 @@ function removeFromfavorites(allHearts) {
     });
   });
 }
+
+function onload() {
+  const onloadArray = JSON.parse(localStorage.getItem("favorites"));
+  displayMovieDetails(onloadArray);
+  addTofavorites(onloadArray);
+}
+function saveToLocalStorage(favoriteArray) {
+  console.log(favoriteArray);
+  localStorage.setItem("favorites", JSON.stringify(favoriteArray));
+}
+
+document.addEventListener("DOMContentLoaded", onload);

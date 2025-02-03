@@ -15,8 +15,6 @@ async function singleMovie() {
       throw new Error("Network response was not ok");
     }
     const data = await res.json();
-    console.log(data);
-
     img.setAttribute("src", selectedMovie);
     movie.textContent = selectedName;
     year.textContent = selectedYear;
