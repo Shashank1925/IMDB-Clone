@@ -200,7 +200,7 @@ function removeFromfavorites(allHearts) {
     });
   });
 }
-
+// On load favorite list persist
 function onload() {
   const onloadArray = JSON.parse(localStorage.getItem("favorites"));
   displayMovieDetails(onloadArray);
