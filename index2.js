@@ -6,6 +6,7 @@ const year = document.querySelector(".movieYear");
 const selectedMovie = localStorage.getItem("movieIMGQuery");
 const selectedName = localStorage.getItem("movieNameQuery");
 const selectedYear = localStorage.getItem("movieYearQuery");
+const searchEl = document.querySelector(".search");
 
 async function singleMovie() {
   const url = `https://omdbapi.com/?s=${selectedMovie}&apikey=${key}`;

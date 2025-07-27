@@ -161,6 +161,8 @@ async function displaySuggestions() {
   }
 }
 // adding favorites function starts here
+// adding favorite to the heart icon
+// when click on heart icon
 function addFavorite(fav, movie) {
   fav.addEventListener("click", () => {
     if (fav.classList.toggle("favorite"));
